@@ -1,0 +1,422 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #777;
+}
+
+body, h1, h2, h3, h4, h5, h6 {
+    font-family: "Lato" , sans-serif;
+    line-height: 1.8;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 10px 0;
+    font-weight: 400;
+}
+
+.letter-spacing {
+    letter-spacing: 10px;
+}
+
+.font-large {
+    font-size: 18px !important;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+.font-xlarge {
+    font-size: 24px !important;
+}
+
+.font-xxlarge {
+    font-size: 36px !important;
+}
+
+p {
+    margin: 15px 0;
+}
+
+.mr-16 {
+    margin-right: 16px !important;
+}
+
+.mt-16 {
+
+}
+
+.mr-t-b-16 {
+    margin-top: 16px !important;
+    margin-bottom: 16px !important;
+}
+
+.padding-t-b-16 {
+    padding-top: 16px !important;
+    padding-bottom: 16px !important;
+}
+
+.padding-l-r-8 {
+    padding-left: 8px !important;
+    padding-right: 8px !important;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.padding-t-b-32 {
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+.padding-8-16 {
+    padding: 8px 16px !important;
+}
+
+.padding-12-24 {
+    padding: 12px 24px !important;
+}
+
+.display-middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.black {
+    color: #fff;
+    background-color: #000;
+}
+
+.row {
+
+}
+
+.row::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.col {
+    float: left;
+}
+
+.col-1 {
+    width: 100%;
+}
+
+.col-2 {
+    width: 50%;
+    padding: 0 8px;
+}
+
+.col-4 {
+    width: 25%;
+    padding: 0 8px;
+}
+
+.col-4-10 {
+    width: 30%;
+    padding: 0 16px;
+}
+
+.col-6-10 {
+    width: 70% ;
+    padding: 0 16px;
+}
+
+.my-background {
+    min-height: 400px;
+    position: relative;
+    opacity: 0.75;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.header .navbar {
+    position: relative;
+}
+
+.navbar-animate {
+    position: relative;
+    animation: myanimation 0.4s;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+    color: #000;
+    background-color: #fff;
+}
+
+@keyframes myanimation {
+    0% {
+        top: -300px;
+        opacity: 0;
+    }
+    100% {
+        top: 0;
+        opacity: 1;
+    }
+}
+
+.header a {
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+    text-transform: uppercase;
+}
+
+.header .mobile-menu-btn {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+/* .header .mobile-menu-btn, */
+.header .search-btn {
+    display: block;
+    float: right;
+}
+
+.header .mobile-nav {
+    display: none;
+}
+
+.header .mobile-nav a {
+    display: block;
+    background-color: #fff;
+    color: #000;
+}
+
+.header .mobile-menu-btn:hover{
+    color: #fff;
+    background-color: #000;
+}
+
+.header .search-btn:hover {
+    background-color: #f44336;
+    color: #fff;
+}
+
+.banner {
+    background: url('/img/banner/parallax1.jpg') center / cover no-repeat;
+}
+
+.banner .banner-text {
+    font-size: 24px;
+    color: #fff;
+    background-color: #000;
+    white-space: nowrap;
+}
+
+.content-container {
+    max-width: 980px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 64px 16px;
+}
+
+.about-section .img-caption {
+    max-width: 100%;
+    aspect-ratio: auto 500 / 333;
+    border-radius: 4px;
+    opacity: 0.6;
+}
+
+.about-section .p-heading {
+    margin: 18px 0;
+    padding: 16px 0;
+}
+
+.about-section .skill {
+    color: #fff;
+    background-color: #616161;
+    padding: 4px 8px;
+}
+
+.about-section .skill-1 {
+    width: 90%;
+}
+
+.about-section .skill-2 {
+    width: 85%;
+}
+
+.about-section .skill-3 {
+    width: 75%;
+}
+
+.statics {
+    background-color: #616161;
+    color: #fff;
+}
+
+.portfolio {
+    background: url('/img/portfolio/parallax2.jpg') center / cover no-repeat;
+}
+
+.display-middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #fff;
+
+}
+
+.mywork-section .work-img {
+    width: 100%;
+    vertical-align: middle;
+}
+
+.mywork-section .work-img:hover {
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+.mywork-section .mywork-btn {
+    margin-top: 64px;
+    border: none;
+    color: #000;
+    background-color: #f1f1f1;
+    font: inherit;
+}
+
+.mywork-section .mywork-btn:hover {
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+.contact {
+    background: url('/img/contact/parallax3.jpg') center / cover no-repeat;
+
+}
+
+.whereiwork-section .map-img {
+    vertical-align: middle;
+    border-radius: 4px;
+    max-width: 100%;
+}
+
+.whereiwork-section .form-control {
+    width: 100%;
+    border: 1px solid #ccc;
+    padding: 8px 8px;
+    font: inherit;
+}
+
+.whereiwork-section .row-control-1 {
+    margin: 0 -16px 8px -16px;
+    padding: 0 8px;
+}
+
+.whereiwork-section .contact-info {
+    font-size: 18px;
+}
+.submit-btn {
+    float: right;
+    color: #fff;
+    background-color: #000;
+    border: none;
+    font: inherit;
+}
+
+.footer {
+    padding: 64px 0;
+    background-color: #000;
+    color: #fff;
+    opacity: 0.6;
+}
+
+.footer:hover {
+    opacity: 1;
+}
+
+.footer-btn {
+    text-decoration: none;
+    font: inherit;
+    color: #000;
+    background-color: #fff;
+    font: inherit;
+    display: inline-block;
+}
+
+.footer-btn:hover {
+    color: #000;
+    background-color: #ccc;
+}
+
+.footer .via-link {
+    color: inherit;
+}
+
+.footer .via-link:hover {
+    color: #4CAF50
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #000;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.modal.open {
+    display: flex;
+}
+
+.modal-container {
+
+}
+
+.modal-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #fff;
+}
+
+.modal-close:hover {
+    cursor: pointer;
+    color: #000;
+    background-color: #fff;
+}
+
+.modal-content {
+    padding-top: 64px;
+    padding-bottom: 64px;
+}
+
+.modal-content img {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    border: none;
+}
+
+.modal-content .modal-text-content {
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+    opacity: 0.6;
+}
