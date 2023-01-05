@@ -40,25 +40,17 @@
         const modalContainer = document.querySelector('.js-modal-container')
         const modalClose = document.querySelector('.js-modal-close')
         
-        // var modalImg = document.getElementById('img-01')
-        var mywork = document.getElementById('img01')
-
         // Open
-        function showMywork() {
-            modal.classList.add('open')
-        }
-
-        
-        for (const mywork of myWorks) {
-            mywork.addEventListener('click' , showMywork)
-            document.getElementById('img01').src = mywork.src;
+        function onClick(element) {
+            document.getElementById('img01').src = element.src;
+            document.getElementById('modal01').style.display = 'flex';
             var captionText = document.getElementById('caption');
-            captionText.innerHTML = mywork.alt;
-        }   
-
-        //close
+            captionText.innerHTML = element.alt;
+          }
+        
+        // Close
         function closeMywork() {
-            modal.classList.remove('open')
+            modal.style.display = 'none' //classList.remove('open')
         }
         modalClose.addEventListener('click', closeMywork)
 
@@ -66,10 +58,3 @@
         modalContainer.addEventListener('click', function(event) {
             event.stopPropagation()
         })
-
-        // function onClick(element) {
-        //     document.getElementById('img01').src = element.src;
-        //     document.getElementById('modal01').style.display = 'flex';
-        //     var captionText = document.getElementById('caption');
-        //     captionText.innerHTML = element.alt;
-        //   }
